@@ -1234,25 +1234,100 @@ section {
   font-size: small;
   text-align: center;
 }
-.div-competences{
-  padding-bottom: 5px;
+
+
+
+.toggle-header {
+  cursor: pointer;
 }
 
-.full-description {
+.toggle-icon::before {
+  content: "+";
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.toggle-content {
   display: none;
 }
 
-.read-more {
-  display: block;
-  margin-top: 5px;
+.toggle.active .toggle-icon::before {
+  content: "-";
 }
 
-.read-more:hover {
-  text-decoration: underline;
+.toggle.active .toggle-content {
+  display: block;
+}
+
+
+.container {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.column {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+.toggle {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
   cursor: pointer;
 }
-.description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+
+.content {
+  display: none;
+  margin-top: 10px;
+}
+
+.content.show {
+  display: block;
+}
+.img-for-veille{
+  width: 100% !important;
+}
+
+
+
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+.preuve {
+  border: 1px solid black;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.preuve h2 {
+  margin: 0 0 10px;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.element img {
+  margin-right: 10px;
 }

@@ -309,3 +309,37 @@ document.querySelectorAll('.read-more').forEach(link => {
     }
   });
 });
+
+$(document).ready(function() {
+  $('.toggle-header').click(function() {
+    $(this).parent().toggleClass('active');
+  });
+});
+
+
+function toggle() {
+  var content = document.getElementById("content");
+  var button = document.querySelector("button");
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    button.textContent = "-";
+  } else {
+    content.style.display = "none";
+    button.textContent = "+";
+  }
+}
+
+var buttons = document.querySelectorAll(".toggle-btn");
+
+buttons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    var content = this.nextElementSibling;
+    if (content.style.display === "none") {
+      content.style.display = "block";
+      this.textContent = "-";
+    } else {
+      content.style.display = "none";
+      this.textContent = "+";
+    }
+  });
+});
