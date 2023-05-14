@@ -1,22 +1,23 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
+
 <head>
-<title class="text-center">1.1 Gérer le patrimoine informatique</title>
-<meta charset="utf-8">
+
+  <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Porte folio d'Alexis Ricoux</title>
+  <title>Competence</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
-  href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-  rel="stylesheet">
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -30,54 +31,77 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+        * Template Name: iPortfolio
+        * Updated: Mar 10 2023 with Bootstrap v5.2.3
+        * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== -->
+
 </head>
 
-<body class="body">
-<div class="preuve">
-	<h1 class="text-center">1.1 Gérer le patrimoine informatique</h1>
-  <div class="column">
-          <h2>Preuve n°1</h2>
-          <button class="toggle">+</button>
-          <div class="content">
-            <h3>ChatGPT et les experts en cybersécurité: Menaces et opportunités</h3>
-            <img class="img-for-veille" src="assets/img/veille-ai.png" alt="Image 1">
-            <hr class="style14">
-            <p>Chat GPT est un modèle de langage de grande envergure qui utilise l'apprentissage automatique pour
-              générer du texte de manière autonome.
-              Les récents développements dans cette technologie comprennent l'amélioration de la compréhension du
-              langage naturel, la personnalisation des réponses et la capacité à comprendre les émotions.L'application de cette technologie dans divers domaines tels que l'éducation, la
-              santé et les affaires est
-              également en cours de développement.
-              Cependant, il y a aussi des préoccupations concernant l'utilisation abusive de cette technologie, en
-            particulier dans le contexte de la désinformation et de la manipulation en ligne.</p>
-            
-            
+<body>
+  <div class="container">
+    <div class="section-title">
+      <h2>1.1 Gérer le patrimoine informatique</h2>
+      <button id="go-back" type="button" class="btn btn-dark">Revenir en arrière</button>
+    </div>
+    <div class="padding-comp">
+      <div class="container-preuve div-compe">
+        <h2 class="title-preuve">Preuve n°1</h2>
+        <div class="content-preuve">
+          <div class="image-preuve">
+            <img src="assets/img/competence/1-git.png" alt="Image-preuve">
+          </div>
+          <div class="text-preuve">
+            <p>L’outil de gestion de version utilisée dans nos projets
+              scolaires et dans le cas de mon stage est github.
+              Dans ce domaine il est l’un des leaders dus au fait qu’il
+              est gratuit et très simple à utiliser.</p>
           </div>
         </div>
-</div>
+      </div>
+      <hr class="style14">
+      <div class="container-preuve div-compe">
+        <h2 class="title-preuve">Preuve n°2</h2>
+        <div class="content-preuve">
+          <div class="image-preuve">
+            <img src="assets/img/competence/1-droitsUtil.png" alt="Image-preuve">
+          </div>
+          <div class="text-preuve">
+            <p>Lorsqu'on gère un patrimoine informatique touchant plusieurs utilisateurs, il est important
+              de mettre en place plusieurs type de droits en fonctions du personnel concernés. Car la
+              gestion de droit limite grandement les risques de sécurités des données. 
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <hr class="style14">
+      <div class="container-preuve div-compe">
+        <h2 class="title-preuve">Preuve n°3</h2>
+        <div class="content-preuve">
+          <div class="image-preuve">
+            <img src="assets/img/competence/1-norme_nommage.png" alt="Image-preuve">
+          </div>
+          <div class="text-preuve">
+            <p>Pour que le travail est une certaine "régularité", il est important de mettre 
+              en place des normes de nommages. Cela aide non seulement le développeur à s'y retrouver
+              plus facilement, mais également pour un futur développeur de pouvoir reprendre le code 
+              s'en se creuser les méninges.
+            </p>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </div>
 </body>
- <script>
-      const toggles = document.querySelectorAll('.toggle');
 
-      toggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const content = toggle.nextElementSibling;
-          if (content.classList.contains('show')) {
-            toggle.textContent = '+';
-            content.classList.remove('show');
-          } else {
-            toggle.textContent = '-';
-            content.classList.add('show');
-          }
-        });
-      });
-    </script>
+<script>
+  document.getElementById("go-back").addEventListener("click", () => {
+    history.back();
+  });
+</script>
+
 </html>

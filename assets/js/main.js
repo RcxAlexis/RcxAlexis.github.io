@@ -318,7 +318,7 @@ $(document).ready(function() {
 
 
 function toggle() {
-  var content = document.getElementById("content");
+  var content = document.getElementById("contentveille");
   var button = document.querySelector("button");
   if (content.style.display === "none") {
     content.style.display = "block";
@@ -343,3 +343,11 @@ buttons.forEach(function(button) {
     }
   });
 });
+
+function redirectToPage(selectElement) {
+  var selectedOption = selectElement.value;
+  if (selectedOption) {
+    window.location.href = selectedOption;
+  }
+}
+
