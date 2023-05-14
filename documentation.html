@@ -53,7 +53,35 @@
                     <hr class="style14">
                     <div class="file-documentation">
 
-                        <a href="assets/documentation/gsb-compte-rendu/__AP3 GSB - cahier des charges 2022 v2.pdf" class="pdf-link">
+                        
+                        <a href="assets/documentation/gsb-paramedical/_ap Cahier des charges GSB paramedical complément TP v3.pdf" class="pdf-link">
+                            <img src="assets/img/pdf.png" alt="Image 3" class="link-image">
+                            <span>Cahier des charges</span>
+                        </a>
+
+                        <a href="assets/documentation/gsb-paramedical/Guide Utilisateur.pdf" class="pdf-link">
+                            <img src="assets/img/pdf.png" alt="Image 3" class="link-image">
+                            <span>Guide utilisateur</span>
+                        </a>
+
+                        <a href="assets/documentation/gsb-paramedical/Tests Fonctionnels.pdf" class="pdf-link">
+                            <img src="assets/img/pdf.png" alt="Image 3" class="link-image">
+                            <span>Tests fonctionnels</span>
+                        </a>
+
+
+                        <div id="popup" class="popup">
+                            <object id="document-object" data="" type="application/pdf" width="100%" height="100%"></object>
+                            <button onclick="closePopup()">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="droite" class="projet-gsb shadow-box"> Gsb Compte rendu
+                    <hr class="style14">
+                    <img src="assets/img/gsbcompterendu1.png" class="img">
+                    <hr class="style14">
+                    <div class="file-documentation">
+                        <a href="assets/documentation/gsb-compte-rendu/cahier_des_charges.pdf" class="pdf-link">
                             <img src="assets/img/pdf.png" alt="Image 3" class="link-image">
                             <span>Cahier des charges</span>
                         </a>
@@ -78,32 +106,7 @@
                             <span>Guide utilisateurs</span>
                         </a>
 
-                        
-                        <div id="popup" class="popup">
-                            <object id="document-object" data="" type="application/pdf" width="100%" height="100%"></object>
-                            <button onclick="closePopup()">Fermer</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="droite" class="projet-gsb shadow-box"> Gsb Compte rendu
-                    <hr class="style14">
-                    <img src="assets/img/gsbcompterendu1.png" class="img">
-                    <hr class="style14">
-                    <div class="file-documentation">
-                        <a href="assets/documentation/gsb-paramedical/_ap Cahier des charges GSB paramedical complément TP v3.pdf" class="pdf-link">
-                            <img src="assets/img/pdf.png" alt="Image 3" class="link-image">
-                            <span>Cahier des charges</span>
-                        </a>
 
-                        <a href="assets/documentation/gsb-paramedical/Guide Utilisateur.pdf" class="pdf-link">
-                            <img src="assets/img/pdf.png" alt="Image 3" class="link-image">
-                            <span>Guide utilisateur</span>
-                        </a>
-
-                        <a href="assets/documentation/gsb-paramedical/Tests Fonctionnels.pdf" class="pdf-link">
-                            <img src="assets/img/pdf.png" alt="Image 3" class="link-image">
-                            <span>Tests fonctionnels</span>
-                        </a>
 
                         
                     </div>
@@ -113,6 +116,24 @@
     </body>
 
     <script>
+        /* function openPDF(event) {
+      event.preventDefault();
+      var pdfUrl = this.getAttribute('href');
+      var viewerUrl = 'https://docs.google.com/viewer?url=' + encodeURIComponent(pdfUrl) + '&embedded=true';
+      var popupWidth = 800;
+      var popupHeight = 600;
+      var leftPosition = (screen.width - popupWidth) / 2;
+      var popup = window.open(viewerUrl, '_blank', 'width=' + popupWidth + ', height=' + popupHeight + ', left=' + leftPosition);
+      popup.focus();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var pdfLinks = document.querySelectorAll('a[href$=".pdf"]');
+      Array.prototype.forEach.call(pdfLinks, function(link) {
+        link.addEventListener('click', openPDF);
+      });
+    });
+*/
         document.addEventListener('DOMContentLoaded', function() {
           var pdfLinks = document.getElementsByClassName('pdf-link');
 
