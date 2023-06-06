@@ -1434,3 +1434,7 @@ hr.style14 {
 .padding-comp{
   padding-bottom: 10px;
 }
+
+.text-inherit{
+  text-align: initial;
+}
